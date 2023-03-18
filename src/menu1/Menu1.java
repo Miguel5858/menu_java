@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 public class Menu1 {
 public static void sumar(){
      int num1,num2,resultado;
-     JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
+     //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
     num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 1"));
     num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2"));
     resultado = num1 + num2;
