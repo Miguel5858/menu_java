@@ -20,6 +20,33 @@ public static void sumar(){
     JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
     }
 
+public static void restar(){
+     int num1,num2,resultado;
+     //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
+    num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 1"));
+    num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2"));
+    resultado = num1 - num2;
+    JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
+    }
+
+public static void multilicar(){
+     int num1,num2,resultado;
+     //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
+    num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 1"));
+    num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2, no debe ser 0"));
+    resultado = num1 * num2;
+    JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
+    }
+
+public static void dividir(){
+     double num1,num2,resultado;
+     //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
+    num1 =  Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 1"));
+    num2 =  Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 2"));
+    resultado = num1 / num2;
+    JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
+    }
+
 
  
     public static void main(String[] args) {
@@ -40,18 +67,18 @@ public static void sumar(){
     switch(opcion)
     {
         case 1:
-            //JOptionPane.showMessageDialog(null,"Ingreso a la opcion suma: ");
+            JOptionPane.showMessageDialog(null,"Ingreso a la opcion suma: ");
          sumar();    
         break;
         case 2:
-            //JOptionPane.showMessageDialog(null,"Ingreso a la opcion restar:");
-        //restar();
+            JOptionPane.showMessageDialog(null,"Ingreso a la opcion restar:");
+        restar();
         break;
         case 3:
-        // multiplicar();   
+        multilicar();   
         break;
         case 4:
-       //  dividir();   
+        dividir();   
         break;
         case 5:
         // modulo();   
