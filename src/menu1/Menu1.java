@@ -37,15 +37,43 @@ public static void multilicar(){
     resultado = num1 * num2;
     JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
     }
-
 public static void dividir(){
      double num1,num2,resultado;
+     JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion dividir: ");
+    num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 1"));
+    num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2"));
+    if(num2==0)
+    {
+    JOptionPane.showMessageDialog(null,"Error : Division por cero");
+    }else
+    {
+     resultado = num1/num2;
+     JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
+    }
+}
+
+public static void modulo(){
+     float num1,num2,resultado;
      //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
-    num1 =  Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 1"));
-    num2 =  Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 2, no debe ser mayor a 0"));
-    resultado = num1 / num2;
+    num1 =  Float.parseFloat(JOptionPane.showInputDialog("Ingrese numero 1"));
+    num2 =  Float.parseFloat(JOptionPane.showInputDialog("Ingrese numero 2"));
+    resultado = num1 % num2;
     JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
     }
+
+public static void pitagoras(){
+     float cateto1,cateto2;
+     //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
+    cateto1 =  Float.parseFloat(JOptionPane.showInputDialog("Ingrese la longitud del cateto 1:"));
+    cateto2 =  Float.parseFloat(JOptionPane.showInputDialog("Ingrese la longitud del cateto 2:"));   
+
+     double hipotenusa = Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));
+     
+    JOptionPane.showMessageDialog(null,"El resultado es: "+ hipotenusa);
+    }
+
+
+
 
 
  
@@ -75,16 +103,19 @@ public static void dividir(){
         restar();
         break;
         case 3:
+        JOptionPane.showMessageDialog(null,"Ingreso a la opcion multilicar:");
         multilicar();   
         break;
         case 4:
+
         dividir();   
         break;
         case 5:
-        // modulo();   
+        JOptionPane.showMessageDialog(null,"Ingreso a la opcion modulo:");
+        modulo();   
         break;
         case 6:
-        // pitagoras();   
+        pitagoras();   
         break;
         case 7:
        //  seno();   
