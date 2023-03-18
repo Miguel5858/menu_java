@@ -33,7 +33,7 @@ public static void multilicar(){
      int num1,num2,resultado;
      //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
     num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 1"));
-    num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2, no debe ser 0"));
+    num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2"));
     resultado = num1 * num2;
     JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
     }
@@ -42,7 +42,7 @@ public static void dividir(){
      double num1,num2,resultado;
      //JOptionPane.showMessageDialog(null,"Ud ingreso a la opcion sumar: ");
     num1 =  Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 1"));
-    num2 =  Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 2"));
+    num2 =  Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero 2, no debe ser mayor a 0"));
     resultado = num1 / num2;
     JOptionPane.showMessageDialog(null,"El resultado es: "+ resultado);
     }
