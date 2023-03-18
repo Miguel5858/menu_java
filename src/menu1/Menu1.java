@@ -23,9 +23,67 @@ public static void sumar(){
 
  
     public static void main(String[] args) {
-
-      
-        
+        int opcion;
+      opcion= Integer.parseInt(JOptionPane.showInputDialog("1. Sumar"+ 
+                                                     "\n2. restar"+
+                                                     "\n3. Multiplicar"+
+                                                     "\n4. Dividir"+
+                                                     "\n5. Modulo"+
+                                                     "\n6. Pitagoras"+
+                                                     "\n7. Seno"+
+                                                     "\n8. Coseno"+
+                                                     "\n9. Area circulo"+
+                                                     "\n10. Numero PI"+
+                                                     "\n11. Numero n"+
+                                                     "\n12. Salir"+
+                                                     "\n\nElija la opcion"));
+    switch(opcion)
+    {
+        case 1:
+            //JOptionPane.showMessageDialog(null,"Ingreso a la opcion suma: ");
+         sumar();    
+        break;
+        case 2:
+            //JOptionPane.showMessageDialog(null,"Ingreso a la opcion restar:");
+        //restar();
+        break;
+        case 3:
+        // multiplicar();   
+        break;
+        case 4:
+       //  dividir();   
+        break;
+        case 5:
+        // modulo();   
+        break;
+        case 6:
+        // pitagoras();   
+        break;
+        case 7:
+       //  seno();   
+        break;
+        case 8:
+            
+        break;
+        case 9:
+            
+        break;
+        case 10:
+            
+        break;
+        case 11:
+            
+        break;
+        case 12:
+        break;
+        default:
+         JOptionPane.showMessageDialog(null,"Opcion no valida");   
     }
+       
+System.exit(0); 
+    }
+}      
+        
     
-}
+    
+
